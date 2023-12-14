@@ -33,7 +33,7 @@ try:
         else:
             st.write('Verifique o CEP digitado ou sua conexão à internet...')
 except:
-    st.write('putz')
+    st.write('Putz! Parece que esse CEP não existe...')
 
 st.write('''
         ---
