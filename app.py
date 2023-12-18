@@ -13,7 +13,7 @@ def buscar_cep(cep):
         return None
 
 st.title("Buscador de CEP")
-st.write('---')
+
 
 cep_input = st.text_input("Digite o CEP desejado:")
 
@@ -29,15 +29,16 @@ try:
                 st.write(f"CIDADE: {endereco['localidade']}")
                 st.write(f"ESTADO: {endereco['uf']}")
             else:
-                st.write('Verifique se o CEP foi digitado corretamente...')
+                st.write('### Verifique se o CEP foi digitado corretamente...')
         else:
-            st.write('Verifique se você preencheu o campo de CEP com um CEP válido...')
+            st.write('### Verifique se você preencheu o campo de CEP com um CEP válido...')
 except:
-    st.write('Putz! Parece que esse CEP não existe...')
+    st.write('### Putz! Parece que esse CEP não existe...')
 
 st.write('''
-        ---
-         Exemplo de CEP: 76916-000
+        
+         Exemplo de CEP válido: **76916-000**
 
-         Aplicação desenvolvida por [Elizeu Barbosa Abreu](https://github.com/elizeubarbosaabreu)''')
+         *Aplicação desenvolvida por [Elizeu Barbosa Abreu](https://github.com/elizeubarbosaabreu)*
+         ''')
         
