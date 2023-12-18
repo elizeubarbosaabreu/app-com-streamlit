@@ -29,9 +29,9 @@ try:
                 st.write(f"CIDADE: {endereco['localidade']}")
                 st.write(f"ESTADO: {endereco['uf']}")
             else:
-                st.write('Verifique o CEP digitado...')
+                st.write('Verifique se o CEP foi digitado corretamente...')
         else:
-            st.write('Verifique o CEP digitado ou sua conexão à internet...')
+            st.write('Verifique se você preencheu o campo de CEP com um CEP válido...')
 except:
     st.write('Putz! Parece que esse CEP não existe...')
 
