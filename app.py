@@ -32,8 +32,10 @@ try:
                 st.write('### Verifique se o CEP foi digitado corretamente...')
         else:
             st.write('### Verifique se você preencheu o campo de CEP com um CEP válido...')
-except:
-    st.write('### Putz! Parece que esse CEP não existe...')
+except Exception as e:
+    st.write(f'''### Putz! Parece que esse CEP não existe...
+             
+             Erro: {e}''')
 
 st.write('''
         
